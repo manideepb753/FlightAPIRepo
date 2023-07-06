@@ -1,0 +1,105 @@
+{
+	"info": {
+		"_postman_id": "27e38d94-05ad-4d00-9fa7-af75770c1c86",
+		"name": "FlightSearchAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28357466"
+	},
+	"item": [
+		{
+			"name": "SortByPrice",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8092/flight/flights?origin=BOM&destination=DEL&sortType=price",
+					"host": [
+						"localhost"
+					],
+					"port": "8092",
+					"path": [
+						"flight",
+						"flights"
+					],
+					"query": [
+						{
+							"key": "origin",
+							"value": "BOM"
+						},
+						{
+							"key": "destination",
+							"value": "DEL"
+						},
+						{
+							"key": "sortType",
+							"value": "price"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SortByDuration",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8092/flight/flights?origin=BOM&destination=DEL&sortType=duration",
+					"host": [
+						"localhost"
+					],
+					"port": "8092",
+					"path": [
+						"flight",
+						"flights"
+					],
+					"query": [
+						{
+							"key": "origin",
+							"value": "BOM"
+						},
+						{
+							"key": "destination",
+							"value": "DEL"
+						},
+						{
+							"key": "sortType",
+							"value": "duration"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FindAllByOriginAndDestination",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8092/flight/flights?origin=BOM&destination=DEL",
+					"host": [
+						"localhost"
+					],
+					"port": "8092",
+					"path": [
+						"flight",
+						"flights"
+					],
+					"query": [
+						{
+							"key": "origin",
+							"value": "BOM"
+						},
+						{
+							"key": "destination",
+							"value": "DEL"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
